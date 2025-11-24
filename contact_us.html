@@ -143,7 +143,66 @@ placeholder="example@gmail.com" required>
       </form>
     </div>
   </section>
-
+<section id="plans">
+    <div class="container">
+      <h2 class="section-title"><i class="bi bi-fire"></i> Choose Your Plan</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img src="https://images.unsplash.com/photo-1591311630200-ffa9120a540f?
+ ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z3ltJTIwZ3V5cyUyMG1hY2Jvb2sl
+ MjB3YWxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600" 
+alt="">
+            <div class="card-body">
+              <h5>Basic Plan</h5>
+              <p>₹999 / Month</p>
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs
+target="#applyModal">Apply Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b"
+            alt="">
+            <div class="card-body">
+              <h5>Pro Plan</h5>
+              <p>₹1999 / Month</p>
+ 
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs
+target="#applyModal">Apply Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74" alt="">
+            <div class="card-body">
+              <h5>Elite Plan</h5>
+              <p>₹2999 / Month</p>
+              <button class="btn btn-sm" data-bs-toggle="modal" data-bs
+target="#applyModal">Apply Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="members" class="container my-5">
+    <h2 class="section-title"><i class="bi bi-people-fill"></i> Members List</h2>
+    <table class="table table-borderless">
+      <thead><tr><th>Name</th><th>Email</th><th>Plan</th></tr></thead>
+      <tbody id="userTable"></tbody>
+    </table>
+  </section>
+  <div class="modal fade" id="applyModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center p-3">
+        <h4>Apply For Plan</h4>
+        <p>Fill the registration form above to get started!</p>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
