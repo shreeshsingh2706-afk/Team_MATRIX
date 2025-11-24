@@ -133,6 +133,19 @@
       box-shadow: 0 0 15px #00f5ff;
       transform: scale(1.05);
     }
+    table {
+ background: rgba(255,255,255,0.05);
+ border-radius: 15px;
+ overflow: hidden;
+ color: #fff;
+ text-align: center;
+ }
+ thead {
+ background: linear-gradient(90deg, #00f5ff, #ff00ff);
+ }
+ tbody tr:hover {
+ background: rgba(0,245,255,0.1);
+ }
   </style>
 </head>
 
@@ -208,7 +221,22 @@ target="#navMenu">
  </div>
  </div>
  </div>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script>
+    document.getElementById('regForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+ 
+const email = document.getElementById('email').value;
+ const plan = document.getElementById('plan').value;
+ document.getElementById('userTable').innerHTML += 
+<tr><td>${name}</td><td>${email}</td><td>${plan}</td></tr>;
+ alert(`
+ 🎉 Welcome ${name}! You’ve joined the FitForge ${plan} Plan.`);
+ this.reset();
+ });
+ </script>
 </body>
 
 </html>
